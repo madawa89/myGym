@@ -1,0 +1,97 @@
+﻿@model GymProject.Portal.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Sign In</h3>
+                </div>
+                <div class="panel-body">
+                    @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { role = "form" }))
+                    {
+                        <fieldset>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Username, new { @class = "form-control", @placeHolder = "Username" })
+                                @*<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>*@
+                            </div>
+                            <div class="form-group">
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeHolder = "Password" })
+                                @*<input class="form-control" placeholder="Password" name="password" type="password" value="">*@
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    @Html.CheckBoxFor(m => m.Remember)
+                                    @*<input name="remember" type="checkbox" value="Remember Me">*@
+                                    Remember Me
+                                </label>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                        </fieldset>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Not Reistered Yet? Register Here</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" action="'@Url.Action("Index", "Login")'">
+                        <fieldset>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.UserId, new { @class = "form-control", @placeHolder = "User ID" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeHolder = "User Name" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", @placeHolder = "FirstName" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", @placeHolder = "LastName" })
+                            </div>
+                            <div class="form-group">
+                                @Html.RadioButtonFor(m => m.Gender, "Female", new { id = "isFemale" }) Female
+                                @Html.RadioButtonFor(m => m.Gender, "Male", new { id = "isMale" }) Male
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeHolder = "Email" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextAreaFor(m => m.Address, new { @class = "form-control", @placeHolder = "Address" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.DateOfBirth, new { @class = "form-control", @placeHolder = "DateOfBirth" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.MobileNumber, new { @class = "form-control", @placeHolder = "MobileNumber" })
+                            </div>
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.LandNumber, new { @class = "form-control", @placeHolder = "LandNumber" })
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button type="submit" class="btn btn-lg btn-success btn-block">Login</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+*@
+
+

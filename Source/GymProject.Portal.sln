@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymProject.DTO", "GymProject.DTO\GymProject.DTO.csproj", "{3AA19199-0DCE-4F90-9843-85F3A2024360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymProject.DataAccess", "GymProject.DataAccess\GymProject.DataAccess.csproj", "{97A061A5-3562-4AC5-B6A7-5AD65608B761}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymProject.Business", "GymProject.Business\GymProject.Business.csproj", "{1A0668DF-FA5A-4B3B-AA7A-62D4DA00885C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymProject.Portal", "GymProject.Portal\GymProject.Portal.csproj", "{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AA19199-0DCE-4F90-9843-85F3A2024360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA19199-0DCE-4F90-9843-85F3A2024360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA19199-0DCE-4F90-9843-85F3A2024360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA19199-0DCE-4F90-9843-85F3A2024360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97A061A5-3562-4AC5-B6A7-5AD65608B761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A061A5-3562-4AC5-B6A7-5AD65608B761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A061A5-3562-4AC5-B6A7-5AD65608B761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A061A5-3562-4AC5-B6A7-5AD65608B761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0668DF-FA5A-4B3B-AA7A-62D4DA00885C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0668DF-FA5A-4B3B-AA7A-62D4DA00885C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0668DF-FA5A-4B3B-AA7A-62D4DA00885C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0668DF-FA5A-4B3B-AA7A-62D4DA00885C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35;packages\EntLibContrib.Data.MySql.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal
