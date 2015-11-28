@@ -18,7 +18,7 @@ namespace GymProject.Portal.Domain
             menu.Add(new Navbar { Id = 5, nameOption = "IFA Fitness", controller = "Home", action = "Blank", imageClass = "fa fa-bars fa-fw", status = true, isParent = false, parentId = 0 });
             menu.Add(new Navbar { Id = 16, nameOption = "Fitness Evaluation", imageClass = "fa fa-thumbs-up fa-fw", status = true, isParent = true, parentId = 0 });
             menu.Add(new Navbar { Id = 17, nameOption = "Evaluation 1", controller = "Home", action = "Blank", status = true, isParent = false, parentId = 16 });
-            menu.Add(new Navbar { Id = 18, nameOption = "Evaluation 2", controller = "Home", action = "Blank", status = true, isParent = false, parentId = 16 });
+            menu.Add(new Navbar { Id = 18, nameOption = "Register Users", controller = "Register", action = "Index", status = true, isParent = false, parentId = 0 });
 
             return menu.ToList();
         }

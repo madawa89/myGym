@@ -33,5 +33,11 @@ namespace GymProject.Portal.Controllers
             return View(lvm);
         }
 
+        public ActionResult LogOff()
+        {
+            Session["UserSession"] = null;
+            return RedirectToAction("Index", "Login");
+        }
+
 	}
 }
