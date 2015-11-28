@@ -17,10 +17,11 @@ namespace GymProject.DataAccess
                 OpenConnection();
                 transaction = connection.BeginTransaction();
 
-                string sql = "INSERT INTO User VALUES(@userID,@userName,@password,@firstName,@lastName,@gender,@email,@dob,@mobileNo,@address,@landNo,@userType)";
+                string sql = @"INSERT INTO User(userName,password,firstName,lastName,gender,email,dob,mobileNo,address,landNo,typeID) 
+                               VALUES(@userName,@password,@firstName,@lastName,@gender,@email,@dob,@mobileNo,@address,@landNo,@userType)";
+
                 DbCommand dbCommand = db.GetSqlStringCommand(sql);
 
-                db.AddInParameter(dbCommand, "@userID", DbType.Int32, user.UserId);
                 db.AddInParameter(dbCommand, "@userName", DbType.String, user.Username);
                 db.AddInParameter(dbCommand, "@password", DbType.String, user.Password);
                 db.AddInParameter(dbCommand, "@firstName", DbType.String, user.FirstName);

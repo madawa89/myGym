@@ -10,6 +10,11 @@ namespace GymProject.Portal.Controllers
     {
         public ActionResult Index()
         {
+            if (Session["UserSession"] == null)
+            {
+                return RedirectToAction("Index", "Login");
+            }
+
             return View();
         }
     }
